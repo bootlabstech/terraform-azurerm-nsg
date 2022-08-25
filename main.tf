@@ -16,9 +16,5 @@ resource "azurerm_network_security_group" "nsg" {
       source_address_prefix      = security_rule.value["source_address_prefix"]
       destination_address_prefix = security_rule.value["destination_address_prefix"]
     }
-
-    tags = {
-      environment = "Production"
-    }
   }
 }
